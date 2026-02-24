@@ -51,6 +51,8 @@ ssh -T git@github.com           #kijken of je gelinkt bent
 <img width="600" src="https://github.com/HOGENT-IT-Lab/gititdone-workshop/blob/main/slides_test/img/git-workflow.png?raw=true"/>
 <br/><br/>
 
+### Basis workflow: 
+
 | Commando                        | Uitleg                                                      |
 |---------------------------------|-------------------------------------------------------------|
 | git status                      | Huidige toestand/situatie bekijken                          |
@@ -63,4 +65,11 @@ ssh -T git@github.com           #kijken of je gelinkt bent
 | git commit -m"*commit message*" | Meteen een (duidelijke!) commit message toevoegen           |
 | git push                        | Lokale repository naar een remote repository                |
 
-## Commit  messages: 
+
+### Remote repositories: 
+| Commando  | Uitleg                                                                                                                                       |
+|-----------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| git fetch | Remote repository naar lokale repository <br/> ***(Dit verandert je working copy niet, het updatet enkel de data in je lokale repository)*** |
+| git merge | Lokale repository naar working directory                                                                                                     |
+| git pull  | Tegelijk fetchen en mergen                                                                                                                   |
+|           |                                                                                                                                              |
