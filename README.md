@@ -200,3 +200,21 @@ De standaard branch heet doorgaans `main` (of vroeger `master`).
 | `git merge upstream/main` | Updates samenvoegen met jouw fork |
 
 > Na het pushen naar je fork, maak je een **Pull Request (PR)** aan om je wijzigingen voor te stellen aan de originele repo.
+
+## Handige overige:
+| Stap                                                                          | Uitleg                                                                                     |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| `git fetch --prune`                                                           | Synchroniseert met remote en verwijdert lokale references naar verwijderde remote branches |
+| `git fetch -p`                                                                | Korte versie van `git fetch --prune`                                                       |
+| `git branch -vv`                                                              | Toont lokale branches + gekoppelde remote status (`gone` indien verwijderd op remote)      |
+| `git branch -vv \| grep ': gone]'`                                            | Filtert branches waarvan de remote branch niet meer bestaat                                |
+| `git branch -vv \| grep ': gone]' \| awk '{print $1}' \| xargs git branch -d` | Verwijdert lokaal alle branches waarvan remote branch verwijderd is                        |
+| `git branch -vv \| grep ': gone]' \| awk '{print $1}' \| xargs git branch -D` | Force delete van lokale branches waarvan remote branch verwijderd is                       |
+| `git remote prune origin`                                                     | Verwijdert verouderde remote tracking branches zonder fetch                                |
+| `git config --global fetch.prune true`                                        | Zet automatisch prunen aan bij elke `git fetch` of `git pull`                              |
+| `git pull --rebase`                                                           | Haalt wijzigingen binnen zonder extra merge commit                                         |
+| `git stash`                                                                   | Slaat tijdelijke niet-gecommitete wijzigingen op                                           |
+| `git stash pop`                                                               | Zet laatste stash terug en verwijdert deze uit stash lijst                                 |
+| `git clean -fd`                                                               | Verwijdert ongevolgde bestanden en mappen                                                  |
+| `git reset --hard HEAD`                                                       | Zet working directory volledig terug naar laatste commit                                   |
+| `git reflog`                                                                  | Toont geschiedenis van HEAD wijzigingen, handig om verloren commits terug te vinden        |
