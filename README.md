@@ -62,6 +62,18 @@ ssh -T git@github.com   # kijken of je gelinkt bent
 
 <br/>
 
+### Absolute basisflow
+
+|Commando | Uitleg|
+|---------|-------|
+| `git add .` | Alles toevoegen aan staging |
+| `git commit -m"commit message"` | Wijzigingen committen met een duidelijke boodschap |
+| `git push` | Lokale repository naar een remote repository pushen |
+
+<br/>
+
+### Overige
+
 | Commando | Uitleg |
 |----------|--------|
 | `git status` | Huidige toestand/situatie bekijken |
@@ -71,10 +83,13 @@ ssh -T git@github.com   # kijken of je gelinkt bent
 | `git clone <URL>` | Een repository binnenhalen (klonen) |
 | `git add <FILE>` | Wijzigingen in working directory aan staging toevoegen |
 | `git add .` | Alles toevoegen aan staging |
-| `git commit -m "commit message"` | Wijzigingen committen met een duidelijke boodschap |
+| `git commit -m"commit message"` | Wijzigingen committen met een duidelijke boodschap |
 | `git push` | Lokale repository naar een remote repository pushen |
 
+
 <br/>
+
+--- 
 
 ### Remote Repositories
 
