@@ -1,4 +1,4 @@
-# Git — Uitgebreide Referentie
+# Git cheatsheet
 
 ## Mentaal model: hoe git denkt
 
