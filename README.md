@@ -4,10 +4,10 @@
 
 Voor je commando's leert helpt het om te weten waar je wijzigingen "wonen". Git kent vier zones waar een bestand zich kan bevinden, en bijna elk commando verplaatst iets van de ene zone naar de andere.
 
-- **Working directory** — je echte bestanden op schijf, waar je in typt
-- **Staging area (index)** — het wachtkamertje voor wat in de volgende commit gaat. `git add` zet iets hierin
-- **Local repository** — je commit-geschiedenis op je eigen machine. `git commit` zet de staging area hierin vast
-- **Remote repository** — de geschiedenis op de server (GitHub/GitLab). `git push` stuurt je lokale commits hierheen
+- **Working directory** - je echte bestanden op schijf, waar je in typt
+- **Staging area (index)** - het wachtkamertje voor wat in de volgende commit gaat. `git add` zet iets hierin
+- **Local repository** - je commit-geschiedenis op je eigen machine. `git commit` zet de staging area hierin vast
+- **Remote repository** - de geschiedenis op de server (GitHub/GitLab). `git push` stuurt je lokale commits hierheen
 
 De hele basisworkflow is dus: wijzig in working directory → `add` naar staging → `commit` naar local → `push` naar remote. Snap je die vier zones, dan snap je het grootste deel van git.
 
